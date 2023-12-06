@@ -1,0 +1,3 @@
+`fairplex` is a work-in-progress experiment to learn a little about load balancing, inspired by [lecture 1](https://web.stanford.edu/class/cs168/l/l1.pdf) of Stanford's CS168: The Modern Algorithmic Toolbox. It was written with the intent of sitting in front of [goshorty](https://www.github.com/eu90h/goshorty).
+
+The idea is pretty simple: hash server addresses multiple ways, using the hashes to form intervals. When a request comes in, hash it. Find the interval it falls into and send it to the corresponding server.
